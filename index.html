@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cuaca Jakarta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Data Cuaca Jakarta</h1>
+            <p class="subtitle">Prakiraan Suhu Per Jam</p>
+            <button id="refreshBtn" class="btn-refresh">Refresh Data</button>
+        </header>
+
+        <div id="loading" class="loading hidden">Memuat data...</div>
+        <div id="error" class="error hidden"></div>
+
+        <div class="weather-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Waktu (time)</th>
+                        <th>Suhu (°C)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
